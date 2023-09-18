@@ -267,6 +267,9 @@ h1,h2,h3,h4,h5
         padding: 15px 0;
 		color: #D43F52;
     }
+#about .technologies h4{
+    color:#393838;
+}
 #about .progress
     {
         border-radius: 4px;
@@ -284,16 +287,185 @@ h1,h2,h3,h4,h5
 #about span
     {
         color: #ffffff;
-        font-weight: bold;
+        /* font-weight: bold;
         display: block;
-        padding-bottom: 6px;
+        padding-bottom: 6px; */
     }
 #about small
     {
         font-weight: bold;
         float: right;
     }
+
+#about .technologies{
+    /* display:flex;
+    flex-direction: row;
+    gap:10px; */
+}
+
+#about .technologies span {
+    padding:5px 10px 5px 10px;
+    border-radius:20px;
+    color:white;
+    background-color: rgba(75, 74, 74, 0.5);
+    margin:5px 5px;
+    font-size: 12px;
+}
 /* end about */
+
+/*start education*/
+
+
+/* .resume-item{
+    padding: 0 0 40px 20px;
+    margin-top: -2px;
+    border-left: 3px solid #000000;
+    position: relative;
+    text-align: left;
+} */
+
+
+#resume-item1{
+    padding: 80px 20px 80px 20px;
+    margin-top: -2px;
+    border-right: 3px solid #000000;
+    position: relative;
+    text-align: right;
+}
+
+#resume-item1::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin-left: 555px;
+    top: 80px;
+    background: transparent;
+    border: 2px solid #D43F52;
+}
+
+.resume-item2{
+    display:flex;
+    gap:552px;
+}
+
+#resume-item2 {
+    padding: 0px 0px 80px 20px;
+    margin-top: -10px;
+    border-left: 3px solid #000000;
+    position: relative;
+    text-align: left;
+    width:500px;
+}
+.resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: transparent;
+    border: 2px solid #D43F52;
+}
+
+#resume-item3 {
+    padding: 0px 20px 80px 20px;
+    margin-top: -10px;
+    border-right: 3px solid #000000;
+    position: relative;
+    text-align: right;
+}
+
+#resume-item3::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin-left: 555px;
+    top: 0;
+    background: transparent;
+    border: 2px solid #D43F52;
+}
+
+ .resume-item h4 {
+     line-height: 18px;
+     font-size: 18px;
+     font-weight: 600;
+     text-transform: uppercase;
+     color: #ffffff;
+     margin-bottom: 10px;
+ }
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+::before {
+    box-sizing: border-box;
+}
+@media screen {
+    html:not(.no-js) [data-aos^="fade"][data-aos^="fade"].aos-animate {
+        opacity: 1;
+
+        -webkit-transform: none;
+
+        transform: none;
+
+    }
+}
+
+@media screen {
+    html:not(.no-js) [data-aos^="fade"][data-aos^="fade"] {
+        opacity: 0;
+
+        transition-property: opacity, -webkit-transform;
+
+        transition-property: opacity, transform;
+
+        transition-property: opacity, transform, -webkit-transform;
+
+    }
+}
+
+@media screen {
+    html:not(.no-js) [data-aos="fade-up"] {
+        -webkit-transform: translate3d(0, 100px, 0);
+
+        transform: translate3d(0, 100px, 0);
+
+    }
+}
+
+[data-aos][data-aos][data-aos-easing="ease-in-out"],
+body[data-aos-easing="ease-in-out"] [data-aos] {
+    transition-timing-function: ease-in-out;
+
+}
+
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+
+        width: 50%;
+
+    }
+}
 
 /* start portfolio */
 #portfolio
