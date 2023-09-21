@@ -171,13 +171,13 @@ h1,h2,h3,h4,h5
 /* start home */       
 #home
 	{
-        background: url('../images/home-bg.jpg');
+        background: url('../images/home-bg-1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 120px;
         padding-bottom: 140px;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.9);        
+        background-color: rgba(0, 0, 0, 0.9);  
 	}
 
 #home .hero-profile-img{
@@ -339,8 +339,8 @@ h1,h2,h3,h4,h5
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    margin-left: 555px;
-    top: 80px;
+    margin-left: 13px;
+    top: 100px;
     background: transparent;
     border: 2px solid #D43F52;
 }
@@ -352,13 +352,25 @@ h1,h2,h3,h4,h5
 
 #resume-item2 {
     padding: 0px 0px 80px 20px;
+    margin-left: -2px;
     margin-top: -10px;
     border-left: 3px solid #000000;
     position: relative;
     text-align: left;
-    width:500px;
+
 }
-.resume-item::before {
+#resume-item2::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 20px;
+    background: transparent;
+    border: 2px solid #D43F52;
+}
+/* .resume-item::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -368,7 +380,7 @@ h1,h2,h3,h4,h5
     top: 0;
     background: transparent;
     border: 2px solid #D43F52;
-}
+} */
 
 #resume-item3 {
     padding: 0px 20px 80px 20px;
@@ -384,8 +396,8 @@ h1,h2,h3,h4,h5
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    margin-left: 555px;
-    top: 0;
+    margin-left: 13px;
+    top: 20px;
     background: transparent;
     border: 2px solid #D43F52;
 }
@@ -477,6 +489,10 @@ body[data-aos-duration="1000"] [data-aos] {
     {
         padding-bottom: 30px;
     }
+#portfolio .technologies{
+    color:rgb(51, 50, 50);
+    font-weight:700;
+}
 #portfolio .portfolio-thumb
     {
         overflow: hidden;
@@ -503,6 +519,8 @@ body[data-aos-duration="1000"] [data-aos] {
         opacity: 0.8;
         transform: scale(0.9);
     }
+
+
 /* end portfolio */
 
 /* start contact */
@@ -556,6 +574,35 @@ body[data-aos-duration="1000"] [data-aos] {
         background: #ffffff;
         color: #D43F52;
     }
+
+.contact-me-sm-link{
+    margin-top: 62px;
+}
+
+.find-me-link-section{
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-bottom:30px;  
+}
+.find-me-link{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+.find-me-link a{
+    text-decoration: none;
+    color:#999;
+    font-size: 25px;
+}
+#downloadCV{
+    background: #D43F52;
+    border: 2px solid transparent;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    padding:10px 10px 10px 10px;
+    /* margin-left:20px; */
+}
 /* end contact */
 
 /* start footer */
